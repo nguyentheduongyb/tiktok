@@ -1,0 +1,44 @@
+.buttonContainer{
+        position: fixed;
+        bottom: 12px;
+        right: 48px;
+        width: 32px;
+        height: 32px;
+}
+@keyframes fadeInUp {
+        from{
+                opacity: 0;
+                transform: translateY(40px);
+        }
+        to{
+                opacity: 1;
+                transform: translateY(0);
+        }
+}
+@keyframes fadeOutBottom {
+        from{
+                opacity: 1;
+                transform: translateY(0);
+        }
+        to{
+                opacity: 0;
+                transform: translateY(40px);
+        }
+}
+.buttonBottom{
+        width: 32px;
+        height: 32px;
+        background-color: var(--primary);
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        color: #fff;
+        border-radius: 50%;
+        transform: rotate(-90deg);
+}
+.active{
+        animation: fadeInUp ease 0.8s;
+}
+.fadeOut{
+        animation: fadeOutBottom ease 0.8s;
+}

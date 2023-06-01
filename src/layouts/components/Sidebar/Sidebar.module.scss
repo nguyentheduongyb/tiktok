@@ -1,0 +1,11 @@
+.wrapper {
+    width: 280px;
+    padding: 20px 0 26px 8px;
+    margin-left: -18px;
+    position:fixed;
+    z-index: 9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    transform-style: preserve-3d;
+}
